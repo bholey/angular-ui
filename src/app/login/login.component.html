@@ -1,0 +1,22 @@
+<html>
+<head>
+
+</head>
+<body>
+<div class="col-sm-6">
+  <div class="rightSet">
+    <form id="form-signin" class="form-signin">
+      <input name="_csrf" value="M01qdW9PdDJ/AgtYO3YMR1x0DT5WKREBADkiJgsVAWhWeiEZNgJBSA==" type="hidden">
+      <h1 class="h3 mb-3 font-weight-normal">Login to Dashboard</h1>
+      <h1 class="h5 mb-3 font-weight-normal">Enter your Credentials</h1>
+      <input id="inputEmail" class="form-control" name="LoginForm[email]" [(ngModel)]="login.email" placeholder="Email address" required="" autofocus="" type="email">
+      <input id="inputPassword" class="form-control" name="LoginForm[password]" [(ngModel)]="login.password" placeholder="Password" required="" type="password">
+
+      <p class="mt-5 mb-3 text-muted">If you forgot your password you can <a href="/password/forgot">reset it</a>.</p>
+      <button type="submit"  (click)="onLogin()" class="btn btn-lg btn-primary btn-block" name="signin-button">Sign in</button>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
